@@ -83,7 +83,7 @@
         <div class="col-lg-6 d-flex flex-column justify-content-center">
           <h1 data-aos="fade-up">t.Tech (Pvt) Ltd.</h1>
           <h2 data-aos="fade-up" data-aos-delay="400">Empowering Freelancers, Empowering Business.</h2>
-         
+
         </div>
         <div class="container-cube col hero-img " data-aos="zoom-out" data-aos-delay="200">
           <!-- <img src="assets/img/hero-img.png" class="img-fluid" alt=""> -->
@@ -168,16 +168,21 @@
               <p>
                 Established in 2022, t.Tech Pvt. Ltd is a global IT firm specializing in AI, Accounting, E-Commerce, Web
                 Dev, Digital Marketing, and UIUX. With 5 branches and a UK marketing office, we collaborate with Win
-                Publishers and serve as an agency for US-based LLC Nationwide Trust Finance. Committed to empowerment,
-                our 150 employees, including 25 at Pakistan's Freelancing Hub, contribute to our average revenue of
-                PKR.2.5 million.
+                Publishers and serve as an agency for US-based LLC Nationwide Trust Finance.
               </p>
+
+              <p class="collapse" id="readmore"> Committed to empowerment,
+                our 150 employees, including 25 at Pakistan's Freelancing Hub, contribute to our average revenue of
+                PKR.2.5 million.</p>
               <div class="text-center text-lg-start">
-                <a href="#"
-                  class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                  <span>Read More</span>
-                  <i class="bi bi-arrow-right"></i>
-                </a>
+                <button id="readLess" onclick="readLess()">
+                  <a href="#readmore" data-bs-toggle="collapse"
+                    class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+
+                    <span>Read More</span>
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </button>
               </div>
             </div>
           </div>
@@ -308,7 +313,7 @@
       </div>
     </section><!-- End Counts Section -->
 
- 
+
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
@@ -413,127 +418,257 @@
 
         <div class="container">
           <div class="restaurant-container">
-          <div class="label-container">
-            <!-- <h2>Top restaurant chains in <span class="">City Name</span></h2> -->
-            <button class="restaurant-arrow-left"><i class="bi bi-arrow-left"></i></button>
-            <button class="restaurant-arrow-right"><i class="bi bi-arrow-right"></i></button>
-          </div>
-          <div class="card-slider">
-            <div class="restaurant-card">
+            <div class="label-container">
+              <!-- <h2>Top restaurant chains in <span class="">City Name</span></h2> -->
+              <button class="restaurant-arrow-left"><i class="bi bi-arrow-left"></i></button>
+              <button class="restaurant-arrow-right"><i class="bi bi-arrow-right"></i></button>
+            </div>
+            <div class="card-slider">
+              <div class="restaurant-card">
                 <div class="image-container">
-                    <img src="./assets/img/tariq mehmood1.jpeg" alt="">
-                    <!-- <div class="discount-badge">20% OFF UPTO ₹50</div> -->
+                  <img src="./assets/img/tariq mehmood1.jpeg" alt="">
+                  <!-- <div class="discount-badge">20% OFF UPTO ₹50</div> -->
                 </div>
                 <h3 class="restaurant-name">Tariq Mahmood</h3>
                 <div class="info-container">
-                    <div class="info-row">
-                      <div class="delivery-info">
-                        <i class="bi bi-dot">Chairman</i> 
-                      </div>
-                      <div class="rating">
-                          <span class="rating-star"><i class="bi bi-star-fill star"></i></span>
-                          <span class="review-count">(4.6)</span>
-                      </div>
+                  <div class="info-row">
+                    <div class="delivery-info">
+                      <i class="bi bi-dot">Chairman</i>
                     </div>
-                    <p>Short description</p>
+                    <div class="rating">
+                      <span class="rating-star"><i class="bi bi-star-fill star"></i></span>
+                      <span class="review-count">(4.6)</span>
+                    </div>
+                  </div>
+                  <p>Short description</p>
                 </div>
-            </div>
-            <div class="restaurant-card">
+              </div>
+              <div class="restaurant-card">
                 <div class="image-container">
-                    <img src="./assets/img/tariq azam.jpg" alt="">
-                    <!-- <div class="discount-badge">20% OFF UPTO ₹50</div> -->
+                  <img src="./assets/img/tariq azam.jpg" alt="">
+                  <!-- <div class="discount-badge">20% OFF UPTO ₹50</div> -->
                 </div>
                 <h3 class="restaurant-name">Tariq Azam</h3>
                 <div class="info-container">
-                    <div class="info-row">
-                      <div class="delivery-info">
-                        <i class="bi bi-dot">CEO</i> 
-                    </div>
-                        <div class="rating">
-                            <span class="rating-star"><i class="bi bi-star-fill star"></i></span>
-                            <span class="review-count">(4.6)</span>
-                        </div>
-                        
-                    </div>
-                    <p>Short description</p>
-                    <!-- <p>India</p> -->
-                </div>
-            </div>
-
-            <div class="restaurant-card">
-              <div class="image-container">
-                  <img src="./assets/img/naila-1.png" alt="">
-                  <!-- <div class="discount-badge">20% OFF UPTO ₹50</div> -->
-              </div>
-              <h3 class="restaurant-name">Naila</h3>
-              <div class="info-container">
                   <div class="info-row">
                     <div class="delivery-info">
-                      <i class="bi bi-dot">MD</i>
-                  </div>
-                      <div class="rating">
-                          <span class="rating-star"><i class="bi bi-star-fill star"></i></span>
-                          <span class="review-count">(4.6)</span>
-                      </div>
-                    
+                      <i class="bi bi-dot">CEO</i>
+                    </div>
+                    <div class="rating">
+                      <span class="rating-star"><i class="bi bi-star-fill star"></i></span>
+                      <span class="review-count">(4.6)</span>
+                    </div>
+
                   </div>
                   <p>Short description</p>
                   <!-- <p>India</p> -->
+                </div>
               </div>
-          </div>
 
-            <div class="restaurant-card">
+              <div class="restaurant-card">
                 <div class="image-container">
-                    <img src="./assets/img/nasir1.jpeg" alt="">
-                    <!-- <div class="discount-badge">20% OFF UPTO ₹50</div> -->
+                  <img src="./assets/img/naila-1.png" alt="">
+                  <!-- <div class="discount-badge">20% OFF UPTO ₹50</div> -->
+                </div>
+                <h3 class="restaurant-name">Naila</h3>
+                <div class="info-container">
+                  <div class="info-row">
+                    <div class="delivery-info">
+                      <i class="bi bi-dot">MD</i>
+                    </div>
+                    <div class="rating">
+                      <span class="rating-star"><i class="bi bi-star-fill star"></i></span>
+                      <span class="review-count">(4.6)</span>
+                    </div>
+
+                  </div>
+                  <p>Short description</p>
+                  <!-- <p>India</p> -->
+                </div>
+              </div>
+
+              <div class="restaurant-card">
+                <div class="image-container">
+                  <img src="./assets/img/nasir1.jpeg" alt="">
+                  <!-- <div class="discount-badge">20% OFF UPTO ₹50</div> -->
                 </div>
                 <h3 class="restaurant-name">Nasir Shah</h3>
                 <div class="info-container">
-                    <div class="info-row">
-                      <div class="delivery-info">
-                        <i class="bi bi-dot">Graphic <br> Designer</i>
+                  <div class="info-row">
+                    <div class="delivery-info">
+                      <i class="bi bi-dot">Graphic <br> Designer</i>
                     </div>
-                        <div class="rating">
-                            <span class="rating-star"><i class="bi bi-star-fill star"></i></span>
-                            <span class="review-count">(4.6)</span>
-                        </div>
-                         
+                    <div class="rating">
+                      <span class="rating-star"><i class="bi bi-star-fill star"></i></span>
+                      <span class="review-count">(4.6)</span>
                     </div>
-                    <p>Short description</p>
-                    <!-- <p>India</p> -->
+
+                  </div>
+                  <p>Short description</p>
+                  <!-- <p>India</p> -->
                 </div>
-            </div>
-            <div class="restaurant-card">
+              </div>
+              <div class="restaurant-card">
                 <div class="image-container">
-                    <img src="./assets/img/masood1.jpeg" alt="">
-                    <!-- <div class="discount-badge">20% OFF UPTO ₹50</div> -->
+                  <img src="./assets/img/masood1.jpeg" alt="">
+                  <!-- <div class="discount-badge">20% OFF UPTO ₹50</div> -->
                 </div>
                 <h3 class="restaurant-name">Masood Aslam</h3>
                 <div class="info-container">
-                    <div class="info-row">
-                      <div class="delivery-info">
-                        <i class="bi bi-dot">Web <br> Developer</i>
+                  <div class="info-row">
+                    <div class="delivery-info">
+                      <i class="bi bi-dot">Web <br> Developer</i>
                     </div>
-                        <div class="rating">
-                            <span class="rating-star"><i class="bi bi-star-fill star"></i></span>
-                            <span class="review-count">(4.6)</span>
-                        </div>
-                        
+                    <div class="rating">
+                      <span class="rating-star"><i class="bi bi-star-fill star"></i></span>
+                      <span class="review-count">(4.6)</span>
                     </div>
-                    <p>Short description</p>
-                    <!-- <p>India</p> -->
+
+                  </div>
+                  <p>Short description</p>
+                  <!-- <p>India</p> -->
                 </div>
-            </div>
-            <div class="restaurant-card">
+              </div>
+              <div class="restaurant-card">
                 <div class="image-container">
-                    <img src="./assets/img/Shabbar Hussain.jpg" alt="">
-                    <!-- <div class="discount-badge">20% OFF UPTO ₹50</div> -->
+                  <img src="./assets/img/Shabbar Hussain.jpg" alt="">
+                  <!-- <div class="discount-badge">20% OFF UPTO ₹50</div> -->
                 </div>
                 <h3 class="restaurant-name">Shabbar Hussain</h3>
                 <div class="info-container">
+                  <div class="info-row">
+                    <div class="delivery-info">
+                      <i class="bi bi-dot">E-Commerce <br> Expert</i>
+                    </div>
+                    <div class="rating">
+                      <span class="rating-star"><i class="bi bi-star-fill star"></i></span>
+                      <span class="review-count">(4.6)</span>
+                    </div>
+
+                  </div>
+                  <p>Short description</p>
+                  <!-- <p>India</p> -->
+                </div>
+              </div>
+              <div class="restaurant-card">
+                <div class="image-container">
+                  <img src="./assets/img/Javeed ali.jpeg" alt="">
+                  <!-- <div class="discount-badge">20% OFF UPTO ₹50</div> -->
+                </div>
+                <h3 class="restaurant-name">Javeed Ali</h3>
+                <div class="info-container">
+                  <div class="info-row">
+                    <div class="delivery-info">
+                      <i class="bi bi-dot">Data Entry <br> Expert</i>
+                    </div>
+                    <div class="rating">
+                      <span class="rating-star"><i class="bi bi-star-fill star"></i></span>
+                      <span class="review-count">(4.6)</span>
+                    </div>
+                  </div>
+                  <p>Short description</p>
+                  <!-- <p>India</p> -->
+                </div>
+              </div>
+
+              <div class="restaurant-card">
+                <div class="image-container">
+                  <img src="./assets/img/naila-1" alt="">
+                  <!-- <div class="discount-badge">20% OFF UPTO ₹50</div> -->
+                </div>
+                <h3 class="restaurant-name">Saqib</h3>
+                <div class="info-container">
+                  <div class="info-row">
+                    <div class="delivery-info">
+                      <i class="bi bi-dot">UI/UX <br>Designer</i>
+                    </div>
+                    <div class="rating">
+                      <span class="rating-star"><i class="bi bi-star-fill star"></i></span>
+                      <span class="review-count">(4.6)</span>
+                    </div>
+
+                  </div>
+                  <p>Short description</p>
+                  <!-- <p>India</p> -->
+                </div>
+              </div>
+
+              <div class="restaurant-card">
+                <div class="image-container">
+                  <img src="./assets/img/naila-1.png" alt="">
+                  <!-- <div class="discount-badge">20% OFF UPTO ₹50</div> -->
+                </div>
+                <h3 class="restaurant-name">Fareen Khan</h3>
+                <div class="info-container">
+                  <div class="info-row">
+                    <div class="delivery-info">
+                      <i class="bi bi-dot">Web <br>Developer</i>
+                    </div>
+                    <div class="rating">
+                      <span class="rating-star"><i class="bi bi-star-fill star"></i></span>
+                      <span class="review-count">(4.6)</span>
+                    </div>
+
+                  </div>
+                  <p>Short description</p>
+                  <!-- <p>India</p> -->
+                </div>
+              </div>
+
+              <div class="restaurant-card">
+                <div class="image-container">
+                  <img src="./assets/img/naila-1.png" alt="">
+                  <!-- <div class="discount-badge">20% OFF UPTO ₹50</div> -->
+                </div>
+                <h3 class="restaurant-name">Sameen Karim</h3>
+                <div class="info-container">
+                  <div class="info-row">
+                    <div class="delivery-info">
+                      <i class="bi bi-dot">Amazon <br> Expert</i>
+                    </div>
+                    <div class="rating">
+                      <span class="rating-star"><i class="bi bi-star-fill star"></i></span>
+                      <span class="review-count">(4.6)</span>
+                    </div>
+
+                  </div>
+                  <p>Short description</p>
+                  <!-- <p>India</p> -->
+                </div>
+              </div>
+
+              <div class="restaurant-card">
+                <div class="image-container">
+                  <img src="./assets/img/naila-1.png" alt="">
+                  <!-- <div class="discount-badge">20% OFF UPTO ₹50</div> -->
+                </div>
+                <h3 class="restaurant-name">Aman Ali Shah</h3>
+                <div class="info-container">
+                  <div class="info-row">
+                    <div class="delivery-info">
+                      <i class="bi bi-dot">Digital <br> Marketer</i>
+                    </div>
+                    <div class="rating">
+                      <span class="rating-star"><i class="bi bi-star-fill star"></i></span>
+                      <span class="review-count">(4.6)</span>
+                    </div>
+
+                  </div>
+                  <p>Short description</p>
+                  <!-- <p>India</p> -->
+                </div>
+              </div>
+
+              <div class="restaurant-card">
+                <div class="image-container">
+                    <img src="./assets/img/naila-1.png" alt="">
+                    <!-- <div class="discount-badge">20% OFF UPTO ₹50</div> -->
+                </div>
+                <h3 class="restaurant-name">Naila</h3>
+                <div class="info-container">
                     <div class="info-row">
                       <div class="delivery-info">
-                        <i class="bi bi-dot">E-Commerce <br> Expert</i>
+                        <i class="bi bi-dot">MD</i>
                     </div>
                         <div class="rating">
                             <span class="rating-star"><i class="bi bi-star-fill star"></i></span>
@@ -545,30 +680,12 @@
                     <!-- <p>India</p> -->
                 </div>
             </div>
-            <div class="restaurant-card">
-                <div class="image-container">
-                    <img src="./assets/img/Javeed ali.jpeg" alt="">
-                    <!-- <div class="discount-badge">20% OFF UPTO ₹50</div> -->
-                </div>
-                <h3 class="restaurant-name">Javeed Ali</h3>
-                <div class="info-container">
-                    <div class="info-row">
-                      <div class="delivery-info">
-                        <i class="bi bi-dot">Data Entry <br> Expert</i>
-                    </div>
-                        <div class="rating">
-                            <span class="rating-star"><i class="bi bi-star-fill star"></i></span>
-                            <span class="review-count">(4.6)</span>
-                        </div>
-                    </div>
-                    <p>Short description</p>
-                    <!-- <p>India</p> -->
-                </div>
+
+
             </div>
           </div>
-        </div>
 
-      </div>
+        </div>
 
     </section><!-- End Testimonials Section -->
 

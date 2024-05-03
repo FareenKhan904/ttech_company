@@ -2075,7 +2075,11 @@ button {
 .label-container {
   display: flex;
   align-items: center;
+  flex-direction: row-reverse;
+  margin-bottom: 30px;
 }
+
+
 
 
 .label-container {
@@ -2091,7 +2095,8 @@ button {
 }
 
 .label-container .bi {
-  font-size: 18px;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .label-container button {
@@ -2109,6 +2114,11 @@ button {
   cursor: not-allowed;
   border: none;
 }
+
+ .label-container button:hover{
+background-color: #73a4f8;
+color: white;
+ }
 
 .restaurant-card {
   transition: transform 0.3s ease-in-out;
