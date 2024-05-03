@@ -213,7 +213,7 @@ img {
 }
 
 .button__ghost {
-  border: 3px solid var(--black-color);
+  border: 3px solid var(--black-color); 
   color: var(--black-color);
   padding: 0.5rem;
   border-radius: 0.7rem;
